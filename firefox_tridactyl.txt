@@ -1,0 +1,28 @@
+Key: cmd
+
+/* Showing which sequence of key act on which segment of the webpage */
+h: hint 
+H: hint -b 
+
+/* Open a url on the same tab */
+o: fillcmdline open 
+O: current_url open 
+
+/* Open a url in a new tab */
+t: fillcmdline tabopen 
+T: current_url tabopen 
+
+/* Navigate to a different tab */
+n: fillcmdline tab 
+
+/* Navigate to the next/prev tab */
+N: tabnext 
+P: tabprev
+
+/* Ordering tabs */
+.: tabmove +1
+,: tabmove -1
+
+/* Scrolling up and down a page */
+>: scrollline 10 
+<: scrollline -10
